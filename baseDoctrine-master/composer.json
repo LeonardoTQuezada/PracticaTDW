@@ -1,0 +1,40 @@
+{
+    "name": "miw/base-doctrine",
+    "type": "project",
+    "description": "UPM - MiW - Base ORM Doctrine",
+    "license": "MIT",
+    "homepage": "http://miw.etsisi.upm.es/",
+    "keywords": ["php", "doctrine-orm", "dotenv"],
+    "authors": [
+        {
+            "name": "MiW UPM",
+            "homepage": "http://miw.etsisi.upm.es/",
+            "email": "miw.etsisi@upm.es",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MiW\\DemoDoctrine\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "ext-json": "*",
+        "ext-mysqli": "*",
+        "ext-pdo": "*",
+        "doctrine/annotations": "^1.13",
+        "doctrine/orm": "^2.11",
+        "symfony/cache": "^6.0",
+        "vlucas/phpdotenv": "^5.4"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "config": {
+        "bin-dir": "bin",
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
+    }
+}
